@@ -1,0 +1,41 @@
+
+WARNING ... THIS LAB IS A BUILD-UP LAB ... MEANING FROM NOW WE'LL BE USING THIS SAME CODE FOR THE NEXT LAB ... SO IT BETTER BE DONE PROPERLY TO START WITH
+1. You are to create this interface (3 panels)
+	-Top: (when not logged, shows a form to log in or a button to register, when logged shows the avatar and a logout button)
+	-Left: Form with textarea to submit comments to database (only enabled if logged in)
+	-Right: Feed from database. (fixed height, used slimscroll to have a nice scroll bar)
+
+	-Registration form in within a ColorBox (username, password, confirm password, avatar)
+2. You are to create new users and retrieve users from a database.
+3. You are to submit new posts and fetch posts from a database.
+
+Database Tables:
+==Users==
+id: INT (primary key, auto-increment)
+username: VARCHAR (20)
+password: VARCHAR (50) [MD5 of course]
+avatar: VARCHAR (50) [you're only saving the picture name] (just like you did for the cooookie)
+status: TINYINT (default 1)
+
+==Posts==
+id: INT
+username: VARCHAR (20)
+avatar: VARCHAR (50)
+comment: TEXT (500)
+
+
+MySQL Queries:
+Add user:
+INSERT INTO users VALUES(DEFAULT, :username, :password, :avatar)
+array("username"=>POST['username'], "password"=>md5(POST['password']), "avatar"=>POST['avatar'])
+
+Get user on login
+SELECT * FROM users WHERE username = :username and password = :avatar
+array("username"=>POST['username'], "password"=>md5(POST['password']))
+
+Submit comment
+INSERT INTO posts VALUES(DEFAULT, :username, :avatar, :comment)
+array("username"=>POST['username'], "avatar"=>POST['avatar'], "comment"=>POST['comment'])
+
+Retrieve all comments
+SELECT * FROM posts ORDER BY id DESC

@@ -1,0 +1,49 @@
+
+.row{
+	margin-bottom: 20px;
+}
+
+.col-md-5{
+	margin: 10px;
+}
+
+.sendMessage-Div{
+	height: 300px;
+	border: 1px solid black;
+}
+
+.allMessages-Div{
+	height: 600px;
+	border: 1px solid black;
+}
+
+.textarea{
+	height: 170px;
+	width: 100%;
+	overflow:auto;
+	resize:none
+}
+
+.profile-avatar{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	
+}
+
+.display-message-Div{
+	height: 85%;
+	border: 1px solid orange;
+	overflow-y: scroll;
+	padding: 0;
+}
+
+textarea:focus{
+	outline: 1px solid orange;
+}
+
+p .post-avatar{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}
