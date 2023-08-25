@@ -11,3 +11,5 @@ An application where users can register and join the public group chat.
 
 ## Project Output
 ![Mini-Chat](https://github.com/jcrunatay/Mini-Chat/blob/master/minichat.png "Mini-Chat") 
+
+![Mini-Chat_Login](https://github.com/jcrunatay/Mini-Chat/blob/master/mini-chat-login.png "Mini-Chat-Login") 
