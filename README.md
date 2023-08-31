@@ -10,6 +10,8 @@ An application where users can register and join the public group chat.
 * Bootstrap
 
 ## Project Output
-![Mini-Chat](https://github.com/jcrunatay/Mini-Chat/blob/master/minichat.png "Mini-Chat") 
+![PublicFeedbackDesktop](https://github.com/jcrunatay/Public_feedback/blob/main/public_feedback.png "") 
 
-![Mini-Chat_Login](https://github.com/jcrunatay/Mini-Chat/blob/master/mini-chat-login.png "Mini-Chat-Login") 
+![PublicFeedbackMobile](https://github.com/jcrunatay/Public_feedback/blob/main/public_feedback2.png "") 
+
+![PublicFeedbackMobileFilter](https://github.com/jcrunatay/Public_feedback/blob/main/public_feedback3.png "") 
